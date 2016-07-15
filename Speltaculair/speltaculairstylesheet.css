@@ -1,0 +1,138 @@
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0
+}
+
+section {
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.leftsection {
+    float: left;
+    position: fixed;
+
+    width: 50%;
+    height: 100%;
+    padding: 5%;
+
+    background-color: #8bc63e;
+}
+
+.logo {
+    display: block;
+    margin:auto;
+    margin-top: 20%;
+
+    max-width: 534px;
+    max-height: 300px;
+    width: 100%;
+    height: auto;
+}
+
+.subtitle {
+    margin: auto;
+
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 4vw;
+}
+
+nav {
+    display: block;
+    margin: auto;
+
+    text-align: center;
+    font-family: "Play", monospace;
+    font-size: 1.25vw;
+    font-weight: bold;
+}
+
+a {
+    padding: 0.5%;
+}
+
+.rightsection {
+    float: right;
+    width: 50.0%;
+    background-color: #3ab54a;
+}
+
+article {
+    display: flex;
+
+    border: 1px solid black;
+    max-height:400px;
+    margin-top: -1px
+}
+
+.contentpicture {
+    overflow: hidden;
+    max-width:  50vw;
+    max-height: 30vw;
+    width: 100%;
+    height: auto;
+}
+
+img {
+    max-width:  50vw;
+    max-height: 30vw;
+    width: 100%;
+    height: 100%;
+}
+
+.contentstorypanel {
+    box-sizing: border-box;
+    padding-left: 5%;
+    padding-right: 5%;
+    max-width:  600px;
+    max-height: 400px;
+    width: 100%;
+    height: 100%;
+}
+
+.contenttype {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 1.5vw;
+}
+
+.contentheader {
+    margin-bottom: 0;
+    margin-top: 1%;
+    font-family: 'Lobster', cursive;
+    font-size: 2.5vw;
+}
+
+.contenttext {
+    font-family: "Play", monospace;
+    font-size: 1vw;
+}
+
+#speelbareervaring {
+    background-color: orange;
+}
+
+#speelbareervaringpicture {
+    background-color: #ffcf7c;
+}
+
+#seriousgame {
+    background-color: #3ab54a;
+}
+
+#seriousgamepicture {
+    background-color: #8adb93;
+}
+
+#educationalgame {
+    background-color: #007be0;
+}
+
+#educationalgamepicture {
+    background-color: #4d86b5;
+}
