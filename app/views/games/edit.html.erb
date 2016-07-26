@@ -1,0 +1,33 @@
+<%= form_for(@game) do |f| %>
+
+<article>
+  <p>
+    <%= f.label :title %> <br>
+    <%= f.text_field :title, size:50 %>
+  </p>
+  <p>
+    <%= f.label :description %> <br>
+    <%= f.text_area :description, cols: 40, rows:7 %>
+  </p>
+  <p>
+    <%= f.label :released_in %> <br>
+    <%= f.number_field :released_in, size: 4 %>
+  </p>
+  <p>
+    <%= f.label :maxplayercount %> <br>
+    <%= f.number_field :maxplayercount, size: 3 %>
+  </p>
+  <p>
+    <%= f.label :gametype %> <br>
+    <%= f.text_field :gametype, size: 20 %>
+  </p>
+
+</article>
+
+<%= f.submit %>
+
+<% end %>
+
+<%= link_to "Edit", edit_game_path %>
+
+<%= link_to "All Games", games_path %>

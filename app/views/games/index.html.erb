@@ -1,0 +1,30 @@
+<h1><%= pluralize(@games.size, 'Game') %></h1>
+
+
+
+<% @games.each do |game| %>
+  <article>
+    <header>
+      <h2><%= link_to game.title, game_path(game) %></h2>
+    </header>
+    <p>
+      <%= truncate(game.description, length: 40, separator: ' ') %>
+    </p>
+    <table>
+      <tr>
+        <th>Released:</th>
+        <td><%= game.released_in %></td>
+      </tr>
+      <tr>
+        <th>Amount of players</th>
+        <td><%= format_player_count(game) %></td>
+      </tr>
+      <tr>
+        <th>Game Type</th>
+        <td><%= game.gametype %></td>
+      </tr>
+    </table>
+  </article>
+<% end %>
+
+<h3><%= link_to("Add New Game", new_game_path) %></h3>

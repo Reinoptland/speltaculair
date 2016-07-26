@@ -1,0 +1,27 @@
+
+<article>
+  <header>
+    <h2><%= @game.title %></h2>
+  </header>
+  <p>
+    <%= @game.description %>
+  </p>
+  <table>
+    <tr>
+      <th>Released:</th>
+      <td><%= @game.released_in %></td>
+    </tr>
+    <tr>
+      <th>Amount of players</th>
+      <td><%= format_player_count(@game) %></td>
+    </tr>
+    <tr>
+      <th>Game Type</th>
+      <td><%= @game.gametype %></td>
+    </tr>
+  </table>
+</article>
+
+<%= link_to "Edit", edit_game_path %>
+
+<%= link_to "All Games", games_path %>
